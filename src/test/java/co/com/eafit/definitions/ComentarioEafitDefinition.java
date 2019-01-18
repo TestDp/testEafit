@@ -23,7 +23,7 @@ public class ComentarioEafitDefinition {
 		comentarioEafitSteps.diligenciarComentario(dtTable);
 	}
 
-	@Then("^el visualiza el pantalla el mensaje Muchas gracias por su comentario\\.$")
+	@Then("^el visualiza el pantalla el mensaje (.*)$")
 	public void elVisualizaElPantallaElMensajeMuchasGraciasPorSuComentario(String mensajeRespuesta) throws Exception {
 		comentarioEafitSteps.visualizarMensajeExitoso(mensajeRespuesta);
 	}
